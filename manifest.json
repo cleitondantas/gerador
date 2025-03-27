@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Gerador de Senhas",
+  "version": "1.0",
+  "description": "Gerador de senhas personalizado baseado em seed, versão e serviço",
+  "permissions": ["activeTab", "tabs"],
+  "action": {
+    "default_popup": "sidebar.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+  }
+  }
+}

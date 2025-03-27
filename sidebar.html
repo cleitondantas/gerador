@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Senha</title>
+    <script src="crypto-js.min.js"></script>
+    <script src="gerador.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #senha {
+            background-color: #e9e9e9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>GERADOR DE SENHA</h2>
+    <label for="seed">Seed:</label>
+    <input type="number" id="seed" name="seed" value="">
+
+    <label for="versao">Vers&atilde;o:</label>
+    <input type="number" id="versao" name="versao" value="0">
+
+    <label for="servico">Servi&ccedil;o:</label>
+    <input type="text" id="servico" name="servico" value="hotmail">
+
+    <label for="tamanho">Tamanho:</label>
+    <input type="number" id="tamanho" name="tamanho" value="8">
+
+    <button id="button">Gerar Senha</button>
+
+    <label for="senha">Senha Gerada:</label>
+    <input type="text" id="senha" name="senha" readonly>
+</body>
+</html>
